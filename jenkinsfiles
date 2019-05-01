@@ -2,7 +2,7 @@ node('linux'){
     stage('Unit Test'){
         git 'https://github.com/aisaa7339/java-project.git'
         sh 'ant -f test.xml -v'
-        junit 'reports/resul.xml'
+        junit 'reports/result.xml'
     }
     
     stage('Build'){
